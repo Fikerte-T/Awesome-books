@@ -27,7 +27,6 @@ function display(){
         const bookData = document.createElement('td');
         const buttonData = document.createElement('td');
         const remove = document.createElement('button');
-        const hr = document.createElement('hr')
         remove.textContent = 'Remove';
         remove.onclick = () => {
             book.remove();
