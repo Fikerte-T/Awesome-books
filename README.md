@@ -27,6 +27,8 @@ To get a local copy up and running follow these simple example steps.
 👤 **Mahbub Alam**
 
 - GitHub: [@mahbubul14](https://github.com/mahbubul14)
+- Twitter: [@twitterhandle](https://twitter.com/mahbubul_14)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mahbubul-alam-20595/)
 
 ## 🤝 Contributing
 
