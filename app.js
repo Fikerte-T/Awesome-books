@@ -36,7 +36,6 @@ function display() {
     bookContainer.appendChild(remove);
     bookContainer.appendChild(lines);
   });
-  document.querySelector('form').reset();
 }
 function addBook() {
   const book = new BookList(title.value, author.value);
