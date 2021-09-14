@@ -3,7 +3,7 @@
 
 > This webpage is designed to add and remove books from a list dynamically using Javascript. When the user clicks the 'Add' button it takes the title and author the user entered, adds it to a list of books and displays the book in the page. When user clicks 'Remove' button the book is removed and disappears from the page. 
 
-![screenshot](./app_screenshot.png)
+![screenshot](https://github.com/Fikerte-T/Awesome-books/blob/manage-books/awesome-books-screenshot.png)
 
 ## Built With
 
