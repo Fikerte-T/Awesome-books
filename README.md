@@ -1,75 +1,46 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> One paragraph statement about the project.
+> This webpage is designed to add and remove books from a list dynamically using Javascript. When the user clicks the 'Add' button it takes the title and author the user entered, adds it to a list of books and displays the book in the page. When user clicks 'Remove' button the book is removed and disappears from the page. 
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML
+- CSS
+- Javascript
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[git@github.com:Fikerte-T/Awesome-books.git](git@github.com:Fikerte-T/Awesome-books.git)
 
 ## Authors
 
-👤 **Author1**
+👤 **Fikerte Tesfaye**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
+👤 **Mahbub Alam**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mahbubul14](https://github.com/mahbubul14)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Any feature requests and contributions are welcome!!
 
-Feel free to check the [issues page](../../issues/).
+Check the issues page [here](https://github.com/Fikerte-T/Awesome-books/issues).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a 👍 👍 if you approve this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Standup team
+- Morning session team
 
 ## 📝 License
 

@@ -1,32 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.list-container {
-    width: 80%;
+#displayBooks {
+  width: 80%;
+}
+
+#displayBooks p,
+button,
+hr {
+  margin: 5px 0;
 }
 
 ul li {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-    width: 200px;
-    padding: 5px;
-    margin: 10px;
-    font-size: 15px;
-
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
 }
 
 .btn {
-    width: 100px;
-    margin: 10px;
-    padding: 5px;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
 }
