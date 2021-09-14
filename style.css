@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#displayBooks {
+  width: 80%;
+}
+
+#displayBooks p,
+button,
+hr {
+  margin: 5px 0;
+}
+
+ul li {
+  padding: 5px 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.btn {
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+}
