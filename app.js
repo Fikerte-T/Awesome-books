@@ -47,8 +47,9 @@ function addBook() {
 addButton.onclick = addBook;
 
 function checkStorage() {
-  if (localStorage.getItem('books')) {
-    books = JSON.parse(localStorage.getItem('books'));
+  if (localStorage.getItem('myBooks')) {
+    books = JSON.parse(localStorage.getItem('myBooks'));
+    display();
   }
 }
 window.onload = checkStorage;
