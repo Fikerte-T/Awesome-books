@@ -17,39 +17,38 @@ class Book {
 
   class Features {
 
-    
     addBook(book){
       newBookArray.booksArr.push(book);
       localStorage.setItem('mybooks', JSON.stringify(newBookArray.booksArr));
-      display(newBookArray.booksArr);
+      return newBookArray.booksArr;
     }
 
     checkStorage() {
       if (localStorage.getItem('mybooks')) {
         let newArr = JSON.parse(localStorage.getItem('mybooks'));
-        display(newArr);
+        return newArr;
       }
-  }
+    }
     display(arr) {
       displayBooks.innerHTML = '';
       arr.forEach((b) => {
           const bookContainer = document.createElement('div');
-          const bookTitle = document.createElement('p');
-          const bookAuthor = document.createElement('p');
+          let bookTitle = document.createElement('p');
+          let bookAuthor = document.createElement('p');
           const remove = document.createElement('button');
           const lines = document.createElement('hr');
           remove.textContent = 'Remove';
           remove.onclick = (e) => {
-          const bookTitle = e.target.parentElement.childNodes[0].textContent;
-          const bookAuthor = e.target.parentElement.childNodes[1].textContent;
+          bookTitle = e.target.parentElement.childNodes[0].textContent;
+          bookAuthor = e.target.parentElement.childNodes[1].textContent;
           arr = arr.filter((book) => book.title !== bookTitle || book.author !== bookAuthor);
-          // this.saveBooks();
-          // display();
+          localStorage.setItem('mybooks', JSON.stringify(arr));
+          feature.display(arr);
           };
-          console.log(arr);
-          // console.log(b.objtitle);
-          // bookTitle.innerText = arr.;
-          // bookAuthor.innerText = b.objauthor;
+          console.log(b.title);
+          console.log(b.author)
+          bookTitle.innerText = b.title;
+          bookAuthor.innerText = b.author;
           displayBooks.appendChild(bookContainer);
           bookContainer.appendChild(bookTitle);
           bookContainer.appendChild(bookAuthor);
@@ -64,7 +63,8 @@ const feature = new Features();
 addButton.addEventListener('click', (e) => {
   e.preventDefault;
   const book = new Book(title.value, author.value);
-  feature.addBook(book);
+  feature.display(feature.addBook(book));
+  document.querySelector('form').reset();
 });
 
-window.onload = feature.checkStorage;
+window.onload = feature.display(feature.checkStorage());
