@@ -9,15 +9,21 @@
 </head>
 <body>
     <main>
-        <div>
-            <h1>Awesome Books</h1>
-            <div id='displayBooks'></div>
+        <h1>All awesome Books</h1>
+        <!-- <div class="book-container"> -->
+            <!-- <div id='displayBooks'></div> -->
+            <table id="displayBooks">
+                
+            </table>
+        <!-- </div> -->
+        <div class="form-container">
+            <h1>Add a new book</h1>
+            <form>
+                <input type="text" id="title" name="title" placeholder="Title" required>
+                <input type="text" id="author" name="author" placeholder="Author" required>
+                <input type="button" id ='add' class="btn btn-add"value = 'Add'>
+            </form>
         </div>
-        <form>
-            <input type="text" id="title" name="title" placeholder="Title" required>
-            <input type="text" id="author" name="author" placeholder="Author" required>
-            <input type="button" id ='add' value = 'Add'>
-        </form>
     </main>
     <script src="app.js"></script>
 </body>

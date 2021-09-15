@@ -31,28 +31,25 @@ class Book {
   display() {
     displayBooks.innerHTML = '';
     this.booksArr.forEach((b) => {
-      const bookContainer = document.createElement('div');
-      let bookTitle = document.createElement('p');
-      let bookAuthor = document.createElement('p');
+      const bookContainer = document.createElement('tr');
+      const bookData = document.createElement('td');
+      const buttonData = document.createElement('td');
       const remove = document.createElement('button');
-      const lines = document.createElement('hr');
+      remove.classList.add('btn', 'btn-remove');
       remove.textContent = 'Remove';
-      remove.onclick = (e) => {
-        bookTitle = e.target.parentElement.childNodes[0].textContent;
-        bookAuthor = e.target.parentElement.childNodes[1].textContent;
+      remove.onclick = () => {
+        let indexOfBook = this.booksArr.indexOf(b);
         this.booksArr = this.booksArr.filter(
-          (book) => book.title !== bookTitle || book.author !== bookAuthor,
-        );
+           (book, index) => index !== indexOfBook
+           );
         localStorage.setItem('mybooks', JSON.stringify(this.booksArr));
         this.display(this.booksArr);
       };
-      bookTitle.innerText = b.title;
-      bookAuthor.innerText = b.author;
+      bookData.innerText = `"${b.title}" by ${b.author}`;
       displayBooks.appendChild(bookContainer);
-      bookContainer.appendChild(bookTitle);
-      bookContainer.appendChild(bookAuthor);
-      bookContainer.appendChild(remove);
-      bookContainer.appendChild(lines);
+      bookContainer.appendChild(bookData);
+      bookContainer.appendChild(buttonData);
+      buttonData.appendChild(remove);
     });
   }
 }
