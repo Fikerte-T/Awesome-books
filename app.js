@@ -10,6 +10,14 @@ class Book {
     this.booksArr = [];
   }
 
+  checkEvent() {
+    addButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (book.title.value !== '' && book.author.value !== '') {
+        this.addBook(book);
+      }
+    });
+  }
   checkStorage() {
     if (localStorage.getItem('mybooks')) {
       this.booksArr = JSON.parse(localStorage.getItem('mybooks'));
@@ -58,10 +66,6 @@ class Book {
 }
 const book = new Book();
 book.checkStorage();
+book.checkEvent();
 
-addButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  if (book.title.value !== '' && book.author.value !== '') {
-    book.addBook(book);
-  }
-});
+
