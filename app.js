@@ -54,7 +54,6 @@ class Features {
     });
   }
 }
-
 const feature = new Features();
 addButton.addEventListener('click', (e) => {
   e.preventDefault;
