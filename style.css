@@ -5,43 +5,71 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+  height: 100vh;
+  font-size: 20px;
+}
+
 nav {
   display: flex;
-  justify-content: space-between;
-  height: 30px;
+  justify-content: space-around;
+  height: 50px;
   padding: 10px 20px;
   font-size: 20px;
+  /* border: 1px solid red; */
+  
 }
 
 nav ul {
   display: flex;
-  padding: 10px;
+  justify-content: flex-end;
+  margin-left: 50px;
+  /* border: 1px solid green; */
+  width: 30%;
+ 
 }
 
-nav ul li,
-.contact ul li {
+nav ul li {
   list-style: none;
-  padding: 10px;
+  /* flex: 2; */
+  /* padding: 0 20px; */
 }
 
-nav ul li a,
 nav a {
   text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+}
+
+nav .logo {
+  font-size: 30px;
+  padding: 0;
+  font-weight: 500;
+  margin-right: 50px;
+}
+
+nav ul li a:hover{
+  color: #fff;
+  background-color: #000;
 }
 
 .book-list,
 .form-container,
 .contact {
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 50px;
+  /* font-size: 20px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin: 100px auto;
+  /* border: 1px solid red; */
 }
 
 #displayBooks {
-  width: 50%;
+  width: 90%;
   margin: 20px;
 }
 
@@ -64,10 +92,14 @@ td {
 }
 
 input {
-  width: 90%;
+  width: 70%;
   padding: 5px;
   margin: 10px;
   font-size: 20px;
+}
+
+form {
+  position: relative;
 }
 
 .btn {
@@ -79,11 +111,43 @@ input {
   box-shadow: 7px 7px 6px rgb(201 201 201);
 }
 
+h1 {
+  margin: 30px;
+}
 .btn-add {
-  float: right;
-  margin-right: 55px;
+  /* float: right;
+  margin-right: 40px; */
+  position: absolute;
+  right: 13%;
+  top: 100%;
+}
+
+.contact ul {
+  text-align: left;
+  margin: 10px 160px;
+  padding: 10px;
+  /* width: 80%; */
+}
+
+.contact ul li {
+  padding: 5px;
 }
 
 .remove {
   display: none;
+}
+
+
+footer {
+  /* border: 1px solid red; */
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+  position: absolute;
+  top: 50%;
+  padding-left: 50px;
 }

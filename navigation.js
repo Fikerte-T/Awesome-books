@@ -1,5 +1,3 @@
-// const { userInfo } = require("os");
-
 const bookList = document.querySelector('.book-list');
 const formContainer = document.querySelector('.form-container');
 const contact = document.querySelector('.contact');
@@ -10,7 +8,7 @@ const hideList = document.querySelector('#displayBooks')
 
 formContainer.style.display='none';
 contact.style.display = 'none';
-// hideList.style.display = 'none'
+
 
 list.addEventListener('click', function(){
     document.querySelector('.book-list').style.display = 'block';
@@ -30,7 +28,4 @@ contactUs.addEventListener('click', function(){
     document.querySelector('.contact').style.display = 'block';
 });
 
-
-
-
-
+let DateTime = luxon.DateTime;
