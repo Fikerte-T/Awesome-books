@@ -5,16 +5,42 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-main,
-.form-container {
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  padding: 10px;
+}
+
+nav ul li,
+.contact ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+nav ul li a,
+nav a {
+  text-decoration: none;
+}
+
+.book-list,
+.form-container,
+.contact {
   font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin: 50px;
 }
 
-#displayBooks,
-.form-container {
+#displayBooks {
   width: 50%;
   margin: 20px;
 }
@@ -56,4 +82,8 @@ input {
 .btn-add {
   float: right;
   margin-right: 55px;
+}
+
+.remove {
+  display: none;
 }
