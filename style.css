@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main,
@@ -12,23 +12,25 @@ main,
   flex-direction: column;
   align-items: center;
 }
+
 #displayBooks,
 .form-container {
   width: 50%;
   margin: 20px;
 }
+
 #displayBooks {
   border: 3px solid rgb(201, 201, 201);
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
 }
 
 tr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 input {
@@ -48,5 +50,5 @@ input {
 
 .btn-add {
   float: right;
-  margin-right: 50px;
+  margin-right: 55px;
 }
