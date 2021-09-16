@@ -34,7 +34,8 @@ tr:nth-child(even) {
 }
 
 td {
-font-weight: bold;}
+  font-weight: bold;
+}
 
 input {
   width: 90%;

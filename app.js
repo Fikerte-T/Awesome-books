@@ -37,8 +37,8 @@ class Book {
       const remove = document.createElement('button');
       remove.classList.add('btn', 'btn-remove');
       remove.textContent = 'Remove';
-      remove.style.background = 'pink'
-      remove.style.paddingRight = '80px'
+      remove.style.background = 'pink';
+      remove.style.paddingRight = '80px';
       remove.onclick = () => {
         const indexOfBook = this.booksArr.indexOf(b);
         this.booksArr = this.booksArr.filter(
