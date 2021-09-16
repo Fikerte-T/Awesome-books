@@ -4,23 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js" integrity="sha256-CnZmNCHHUMy22/PJclCIISZ5Ib4MnUu+7ee5YNxtsZQ=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Awesome Books</title>
 </head>
 <body>
-    <main>
+    <nav>
+        <a href="" class="logo">Awesome Books</a>
+        <ul>
+            <li><a id= "list" href="#">List</a></li>
+            <li><a id="add-new" href="#">Add new</a></li>
+            <li><a id="contact" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date">
+        <p id="date"></p>
+    </div>
+    <div class="book-list">
         <h1>All awesome Books</h1>
-            <table id="displayBooks">
-            </table>
-        <div class="form-container">
-            <h1>Add a new book</h1>
-            <form>
-                <input type="text" id="title" name="title" placeholder="Title" required>
-                <input type="text" id="author" name="author" placeholder="Author" required>
-                <input type="button" id ='add' class="btn btn-add" value = 'Add'>
-            </form>
-        </div>
-    </main>
+        <table id="displayBooks">
+        </table>
+    </div>
+
+    <div class="form-container">
+        <h1>Add a new book</h1>
+        <form>
+            <input type="text" id="title" name="title" placeholder="Title" required>
+            <input type="text" id="author" name="author" placeholder="Author" required>
+            <input type="button" id ='add' class="btn btn-add" value = 'Add'>
+        </form>
+    </div>
+    <div class="contact">
+        <h1>Contact information</h1>
+        <p>Do you have any questions or you just want to say "Hello"?
+            YOu can reach out to us!
+        </p>
+        <ul>
+            <li>Our email: mail@mail.com</li>
+            <li>Our phone number: 1234568</li>
+            <li>Our address: Streetname , city, country</li>
+
+        </ul>
+    </div>
+    <footer>   
+        <p>Copyright</p>
+    </footer>
     <script src="app.js"></script>
+    <script src="navigation.js"></script>
 </body>
 </html>
