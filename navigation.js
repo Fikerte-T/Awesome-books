@@ -6,6 +6,11 @@ const contact = document.querySelector('.contact');
 const list = document.querySelector('#list');
 const addNew = document.querySelector('#add-new');
 const contactUs = document.getElementById('contact');
+const hideList = document.querySelector('#displayBooks')
+
+formContainer.style.display='none';
+contact.style.display = 'none';
+hideList.style.display = 'none'
 
 list.addEventListener('click', function(){
     document.querySelector('.book-list').style.display = 'block';
