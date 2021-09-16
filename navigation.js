@@ -10,7 +10,7 @@ const hideList = document.querySelector('#displayBooks')
 
 formContainer.style.display='none';
 contact.style.display = 'none';
-hideList.style.display = 'none'
+// hideList.style.display = 'none'
 
 list.addEventListener('click', function(){
     document.querySelector('.book-list').style.display = 'block';
