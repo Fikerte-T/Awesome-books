@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main,
@@ -25,6 +25,12 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 input {
   width: 90%;
   padding: 5px;
@@ -38,4 +44,9 @@ input {
   margin: 10px;
   padding: 5px;
   box-shadow: 7px 7px 6px rgb(201 201 201);
+}
+
+.btn-add {
+  float: right;
+  margin-right: 50px;
 }

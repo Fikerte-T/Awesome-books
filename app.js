@@ -38,10 +38,10 @@ class Book {
       remove.classList.add('btn', 'btn-remove');
       remove.textContent = 'Remove';
       remove.onclick = () => {
-        let indexOfBook = this.booksArr.indexOf(b);
+        const indexOfBook = this.booksArr.indexOf(b);
         this.booksArr = this.booksArr.filter(
-           (book, index) => index !== indexOfBook
-           );
+          (book, index) => index !== indexOfBook,
+        );
         localStorage.setItem('mybooks', JSON.stringify(this.booksArr));
         this.display(this.booksArr);
       };
@@ -53,6 +53,7 @@ class Book {
     });
   }
 }
+
 const book = new Book();
 book.checkStorage();
 
