@@ -16,23 +16,17 @@ nav {
   height: 50px;
   padding: 10px 20px;
   font-size: 20px;
-  /* border: 1px solid red; */
-  
 }
 
 nav ul {
   display: flex;
   justify-content: flex-end;
   margin-left: 50px;
-  /* border: 1px solid green; */
   width: 30%;
- 
 }
 
 nav ul li {
   list-style: none;
-  /* flex: 2; */
-  /* padding: 0 20px; */
 }
 
 nav a {
@@ -48,7 +42,7 @@ nav .logo {
   margin-right: 50px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: #fff;
   background-color: #000;
 }
@@ -56,24 +50,15 @@ nav ul li a:hover{
 .book-list,
 .form-container,
 .contact {
-  /* font-size: 20px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
   width: 50%;
   height: 50%;
   text-align: center;
   margin: 100px auto;
-  /* border: 1px solid red; */
 }
 
 #displayBooks {
   width: 90%;
   margin: 20px;
-}
-
-#displayBooks {
   border: 3px solid rgb(201, 201, 201);
 }
 
@@ -114,9 +99,8 @@ form {
 h1 {
   margin: 30px;
 }
+
 .btn-add {
-  /* float: right;
-  margin-right: 40px; */
   position: absolute;
   right: 13%;
   top: 100%;
@@ -126,7 +110,6 @@ h1 {
   text-align: left;
   margin: 10px 160px;
   padding: 10px;
-  /* width: 80%; */
 }
 
 .contact ul li {
@@ -137,17 +120,20 @@ h1 {
   display: none;
 }
 
-
 footer {
-  /* border: 1px solid red; */
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
   position: absolute;
   top: 50%;
   padding-left: 50px;
+}
+
+#date {
+  float: right;
+  margin-right: 13%;
 }
